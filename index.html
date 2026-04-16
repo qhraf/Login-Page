@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Portal Login</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f2f2f2;
+    }
+    .login-box {
+      background: white;
+      padding: 20px;
+      display: inline-block;
+      border-radius: 10px;
+    }
+    input {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="login-box">
+  <img src="school_logo.png" width="100">
+  <h2>Student Portal Login</h2>
+
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+
+  <button onclick="fakeLogin()">Login</button>
+</div>
+
+<script>
+  function fakeLogin() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    alert(
+      "Processing login...\n\n" +
+      "This was a phishing simulation.\n" +
+      "Your login details have been sent to attackers.\n\n" +
+      "Captured details:\n" +
+      "Username: " + username + "\n" +
+      "Password: " + password
+    );
+  }
+</script>
+
+</body>
+</html>
